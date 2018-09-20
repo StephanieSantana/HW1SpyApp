@@ -19,14 +19,14 @@ struct AlphanumericCeaserCipher: Cipher {
         for character in plaintext.uppercased() {
             let unicode = character.unicodeScalars.first!.value
             if unicode < 48 || (unicode > 57 && unicode < 65) || unicode > 90 {
-                return "Please enter alphanumeric inputs (A-Z & 0-9)"
+                return "Please enter alphanumeric inputs (0-9 & A-Z)"
             }
             var shiftedUnicode = unicode + shiftBy
             while shiftedUnicode > 90 {
-                shiftedUnicode -= 43
+                shiftedUnicode = shiftedUnicode - 43
             }
             if (shiftedUnicode > 57 && shiftedUnicode < 65) {
-                shiftedUnicode += 7
+                shiftedUnicode = shiftedUnicode + 7
             }
             let shiftedCharacter = String(UnicodeScalar(UInt8(shiftedUnicode)))
             encoded = encoded + shiftedCharacter
@@ -43,21 +43,21 @@ struct AlphanumericCeaserCipher: Cipher {
         for character in decrypted.uppercased() {
             let unicode = character.unicodeScalars.first!.value
             if unicode < 48 || (unicode > 57 && unicode < 65) || unicode > 90 {
-                return "Please enter alphanumeric inputs (A-Z & 0-9)"
+                return "Please enter alphanumeric inputs (0-9 & A-Z)"
             }
             var shiftedUnicode = unicode
             while shiftedUnicode < 48 {
-                shiftedUnicode += 43
+                shiftedUnicode = shiftedUnicode + 43
             }
             if (shiftedUnicode > 57 && shiftedUnicode < 65) {
-                shiftedUnicode -= 7
+                shiftedUnicode = shiftedUnicode - 7
             }
             let shiftedCharacter = String(UnicodeScalar(UInt8(shiftedUnicode)))
             decoded = decoded + shiftedCharacter
         }
         return decoded
     }
-   
-}
     
+}
+
 
