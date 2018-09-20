@@ -55,9 +55,8 @@ struct AlphanumericCeaserCipher: Cipher {
             let shiftedCharacter = String(UnicodeScalar(UInt8(shiftedUnicode)))
             decoded = decoded + shiftedCharacter
         }
-        return decoded
+        return decoded.lowercased()
     }
     
 }
-
 
