@@ -1,5 +1,5 @@
 //
-//  ROT13.swift
+//  ROT13Plus1.swift
 //  SpyApp
 //
 //  Created by Stephanie Santana on 9/20/18.
@@ -8,15 +8,21 @@
 
 import Foundation
 
-struct ROT13: Cipher {
+struct ROT13Plus: Cipher {
     
     func encode(_ plaintext: String, secret: String) -> String? {
-        
+        guard let shiftBy = UInt32(secret) else {
+            return nil
+        }
         var encoded = ""
         
         for character in plaintext {
             let unicode = character.unicodeScalars.first!.value
-            let shiftedUnicode = unicode + 13
+            if shiftBy == 0 {
+            return plaintext
+            }
+            let shiftBy = shiftBy + 13
+            let shiftedUnicode = unicode + shiftBy
             let shiftedCharacter = String(UnicodeScalar(UInt8(shiftedUnicode)))
             encoded = encoded + shiftedCharacter
         }

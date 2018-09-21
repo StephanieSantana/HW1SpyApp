@@ -16,7 +16,11 @@
 		264D480E2140912F00A10259 /* CeaserCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264D480D2140912F00A10259 /* CeaserCipher.swift */; };
 		264D481021409CAF00A10259 /* CipherFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264D480F21409CAF00A10259 /* CipherFactory.swift */; };
 		2686D6D221545AF900AEEC93 /* NegativeCeaserCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2686D6D121545AF900AEEC93 /* NegativeCeaserCipher.swift */; };
-		26CEFC8C21544C1E002B5560 /* ROT13.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CEFC8B21544C1E002B5560 /* ROT13.swift */; };
+		2686D6D421546DE700AEEC93 /* CeaserCipherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2686D6D321546DE700AEEC93 /* CeaserCipherTests.swift */; };
+		2686D6D62154701100AEEC93 /* AlphanumericCeaserCipherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2686D6D52154701100AEEC93 /* AlphanumericCeaserCipherTests.swift */; };
+		2686D6D8215470DC00AEEC93 /* ROT13PlusTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2686D6D7215470DC00AEEC93 /* ROT13PlusTest.swift */; };
+		2686D6DA2154755100AEEC93 /* NegativeCeaserCipherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2686D6D92154755100AEEC93 /* NegativeCeaserCipherTests.swift */; };
+		26CEFC8C21544C1E002B5560 /* ROT13Plus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CEFC8B21544C1E002B5560 /* ROT13Plus.swift */; };
 		26CEFC8E2154563E002B5560 /* AlphanumericCeaserCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CEFC8D2154563E002B5560 /* AlphanumericCeaserCipher.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,7 +48,11 @@
 		264D480D2140912F00A10259 /* CeaserCipher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeaserCipher.swift; sourceTree = "<group>"; };
 		264D480F21409CAF00A10259 /* CipherFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CipherFactory.swift; sourceTree = "<group>"; };
 		2686D6D121545AF900AEEC93 /* NegativeCeaserCipher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NegativeCeaserCipher.swift; sourceTree = "<group>"; };
-		26CEFC8B21544C1E002B5560 /* ROT13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ROT13.swift; sourceTree = "<group>"; };
+		2686D6D321546DE700AEEC93 /* CeaserCipherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeaserCipherTests.swift; sourceTree = "<group>"; };
+		2686D6D52154701100AEEC93 /* AlphanumericCeaserCipherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphanumericCeaserCipherTests.swift; sourceTree = "<group>"; };
+		2686D6D7215470DC00AEEC93 /* ROT13PlusTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ROT13PlusTest.swift; sourceTree = "<group>"; };
+		2686D6D92154755100AEEC93 /* NegativeCeaserCipherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NegativeCeaserCipherTests.swift; sourceTree = "<group>"; };
+		26CEFC8B21544C1E002B5560 /* ROT13Plus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ROT13Plus.swift; sourceTree = "<group>"; };
 		26CEFC8D2154563E002B5560 /* AlphanumericCeaserCipher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphanumericCeaserCipher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,7 +103,7 @@
 				264D47F42140808600A10259 /* Assets.xcassets */,
 				264D47F62140808600A10259 /* LaunchScreen.storyboard */,
 				264D47F92140808600A10259 /* Info.plist */,
-				26CEFC8B21544C1E002B5560 /* ROT13.swift */,
+				26CEFC8B21544C1E002B5560 /* ROT13Plus.swift */,
 				26CEFC8D2154563E002B5560 /* AlphanumericCeaserCipher.swift */,
 				2686D6D121545AF900AEEC93 /* NegativeCeaserCipher.swift */,
 			);
@@ -107,6 +115,10 @@
 			children = (
 				264D48022140808600A10259 /* SpyAppTests.swift */,
 				264D48042140808600A10259 /* Info.plist */,
+				2686D6D321546DE700AEEC93 /* CeaserCipherTests.swift */,
+				2686D6D52154701100AEEC93 /* AlphanumericCeaserCipherTests.swift */,
+				2686D6D7215470DC00AEEC93 /* ROT13PlusTest.swift */,
+				2686D6D92154755100AEEC93 /* NegativeCeaserCipherTests.swift */,
 			);
 			path = SpyAppTests;
 			sourceTree = "<group>";
@@ -220,7 +232,7 @@
 				264D47F02140808600A10259 /* SpyAppViewController.swift in Sources */,
 				264D47EE2140808600A10259 /* AppDelegate.swift in Sources */,
 				26CEFC8E2154563E002B5560 /* AlphanumericCeaserCipher.swift in Sources */,
-				26CEFC8C21544C1E002B5560 /* ROT13.swift in Sources */,
+				26CEFC8C21544C1E002B5560 /* ROT13Plus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +241,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				264D48032140808600A10259 /* SpyAppTests.swift in Sources */,
+				2686D6D62154701100AEEC93 /* AlphanumericCeaserCipherTests.swift in Sources */,
+				2686D6D421546DE700AEEC93 /* CeaserCipherTests.swift in Sources */,
+				2686D6DA2154755100AEEC93 /* NegativeCeaserCipherTests.swift in Sources */,
+				2686D6D8215470DC00AEEC93 /* ROT13PlusTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

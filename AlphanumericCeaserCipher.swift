@@ -57,6 +57,7 @@ struct AlphanumericCeaserCipher: Cipher {
         }
         return decoded.lowercased()
     }
-    
+   
 }
+    
 

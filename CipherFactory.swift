@@ -13,7 +13,7 @@ struct CipherFactory {
     private var ciphers: [String: Cipher] = [
         "Ceasar": CeaserCipher(),
         "AlphaNum": AlphanumericCeaserCipher(),
-        "ROT13": ROT13(),
+        "ROT13+": ROT13Plus(),
         "NegCeaser": NegativeCeaserCipher(),
         
     ]
